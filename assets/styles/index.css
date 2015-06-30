@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+}
+
+.header-container {
+  position: relative;
+}
+
+#slideshow .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 650px) {
+  #slideshow .item img{
+      display: block;
+      width: 700px;
+      height: auto;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  left: 0; right: 0;
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+   width: 90%;
+  ;
+}
