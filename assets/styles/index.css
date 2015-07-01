@@ -4,12 +4,14 @@
 
 .header-container {
   position: relative;
+  margin-bottom: 20px;
 }
 
 #slideshow .item img{
     display: block;
     width: 100%;
     height: auto;
+
 }
 
 @media screen and (max-width: 650px) {
@@ -26,10 +28,133 @@
   transform: translateY(-50%);
   margin: auto;
   left: 0; right: 0;
+  transition: all 0.5s ease;
+  width: 695px;
 }
 
 @media screen and (max-width: 700px) {
   .logo {
    width: 90%;
-  ;
+   transition: all 0.5s ease;
+  }
+}
+
+#owl-demo .owl-item div{
+  padding:5px;
+}
+#owl-demo .owl-item img{
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.content-container {
+  text-align: center;
+}
+
+.content-container h1 {
+  font-size: 40px;
+  font-weight: 300;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 700px) {
+  .content-container h1 {
+    font-size: 30px;
+    font-weight: 300;
+    transition: all 0.5s ease;
+  }
+}
+
+.content-container img {
+  width:100px;
+  padding-bottom: 40px;
+}
+
+
+.content-container p {
+  font-size: 18px;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-me img {
+  float: right;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+  .about-me img {
+    float: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.about-me p {
+  max-width: 300px;
+}
+
+.contact-container {
+  text-align: center;
+}
+
+.contact-container img {
+  width: 90px;
+  padding-bottom: 40px;
+}
+
+.contact-container h1 {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 300;
+  transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 700px) {
+  .contact-container h1 {
+    font-size: 30px;
+    font-weight: 300;
+    transition: all 0.5s ease;
+  }
+}
+
+.contact-container p {
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.contact-container .button a {
+  margin: 30px;
+  color: #ffffff;
+  font-size:20px;
+  padding:10px;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #da1346;
+  background: #da1346;
+}
+
+.contact-container .button a:hover {
+  text-decoration: none;
+  border-color: #bb0f3b;
+  background: #bb0f3b;
+  }
+
+.contact-container .info {
+  padding-bottom: 10px
+}
+
+
+#map {
+  height: 600px;
+  margin: 0px;
+  padding: 0px
 }

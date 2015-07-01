@@ -4,22 +4,29 @@
   <!-- Title -->
   <title>Holly's Hair</title>
   <!-- Styles -->
-  <link rel="stylesheet" href="Assets/Styles/bootstrap.css">
-  <link rel="stylesheet" href="Assets/Styles/Layout-Styles.css">
-  <link rel="stylesheet" href="Assets/Styles/index.css">      
-  <link rel="stylesheet" href="Assets/Styles/font-awesome.min.css">
-  <link rel="stylesheet" href="Assets/Styles/owl.carousel.css">
-  <link rel="stylesheet" href="Assets/Styles/owl.theme.css">
-  <link rel="stylesheet" href="Assets/Styles/owl.transitions.css">
+  <link rel="stylesheet" href="assets/styles/bootstrap.css">
+  <link rel="stylesheet" href="assets/styles/Layout-Styles.css">
+  <link rel="stylesheet" href="assets/styles/index.css"> 
+  <link rel="stylesheet" href="assets/styles/animate.css">     
+  <link rel="stylesheet" href="assets/styles/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/styles/owl.carousel.css">
+  <link rel="stylesheet" href="assets/styles/owl.theme.css">
+  <link rel="stylesheet" href="assets/styles/owl.transitions.css">
+  <link rel="stylesheet" href="assets/javascript/popup/jquery.fancybox.css">
   <!-- Font -->
   <link href="assets/font/font.css" rel='stylesheet' type='text/css'>
   <!-- Icon -->
   <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon/favicon.png">
   <!-- javascript -->
   <script src="assets/javascript/jquery-1.11.3.min.js"></script>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
   <script src="assets/javascript/owl.carousel.js"></script>
   <script src="assets/javascript/slideshow/slideshow.js"></script>
-  
+  <script src="assets/javascript/slideshow/gallery.js"></script>
+  <script src="assets/javascript/popup/jquery.fancybox.js"></script>
+  <script src="assets/javascript/popup/jquery.fancybox.pack.js"></script>
+  <script src="assets/javascript/popup/fancybox_init.js"></script>
+  <script src="assets/javascript/map/map.js"></script>
 </head>
 <body>
   <div class="header-container">
@@ -31,7 +38,53 @@
     </div>
      <img class="logo" src="assets/images/logo/logo.png">  
   </div>
-  
+  <div class="content-container container">
+    <div class="icon">
+      <img src="assets/images/flat/scissor.png">
+    </div>
+      <h1>Welcome to Holly's Hair</h1>
+      <p>Holly's Hair is a unisex hair salon based on North hill inside Alfie Allens babers. I do a range of services from cutting & colouring to Hair extensions.</p>
+  </div>
+    <div class="slideshow-container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <div id="owl-demo" class="owl-carousel">
+            <div><a class="fancybox" rel="group" href="assets/images/hair-styles/IMG-1.jpg"><img src="assets/images/hair-styles/IMG-1.jpg"></a></div>
+            <div><a class="fancybox" rel="group" href="assets/images/hair-styles/IMG-2.jpg"><img src="assets/images/hair-styles/IMG-2.jpg"></a></div>
+            <div><a class="fancybox" rel="group" href="assets/images/hair-styles/IMG-3.jpg"><img src="assets/images/hair-styles/IMG-3.jpg"></a></div>
+            <div><a class="fancybox" rel="group" href="assets/images/hair-styles/IMG-4.jpg"><img src="assets/images/hair-styles/IMG-4.jpg"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <hr>
+  <div class="about-me">
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="assets/images/me/image-1.jpg">
+      </div>
+      <div class="col-sm-6">
+        <h1>About Holly.</h1>
+        <p>Holly arnold is a british unisex hair stylist, she provides many different styles, ranging from cutting & colouring to Hair extensions, a veriety of different styles, Holly has been hair dressing for - years now and has grew years of tallent throught the journey of cutting hair, her styles are amazing, she also operates at a very amazing cheep price.</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="contact-container">
+    <div class="icon">
+      <img src="assets/images/flat/phone.png">
+        </div>
+          <h1>Get in contact with me</h1>
+          <div class="info">
+            <p><i class="fa fa-phone"></i> Phone  -  07974 439016</p>
+            <p><i class="fa fa-location-arrow"></i> Location  -  38 North Hill, Colchester, Essex, CO1 1QR</p>
+          </div>
+            <div class="button"><a href="#map" class="fancybox">Map <i class="fa fa-map-marker"></i></div></a>
+            <div id="map" style="display:none;width:300px;">
+          </div>
+        </div>
+      <hr>
+
 
 
 

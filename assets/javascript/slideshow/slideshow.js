@@ -7,7 +7,8 @@ $(document).ready(function() {
       pagination : false,
       singleItem:true,
       autoPlay : true,
-      transitionStyle : "fade"
+      transitionStyle : "fade",
+      animateOut: 'fadeOut'
  
   });
  
