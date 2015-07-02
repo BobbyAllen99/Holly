@@ -1,14 +1,17 @@
+
 body {
   font-family: 'Lato', sans-serif;
   background-image: url(https://hollys-hair.herokuapp.com/assets/images/background/stripes.jpg);
-  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: none;
   background-position: center;
+  background-attachment: fixed;
 }
 
-  .container_site {
+.container_site {
   background-color:#ffffff;
   padding-bottom: 25px;
-  }
+}
 
 @media screen and (min-width: 1280px) {
   .container_site {
