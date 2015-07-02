@@ -1,6 +1,6 @@
 body {
   font-family: 'Lato', sans-serif;
-  background-image: url(file://localhost/Users/bobby/GitHub/Holly/assets/images/background/stripes.jpg);
+  background-image: url(https://hollys-hair.herokuapp.com/assets/images/background/stripes.jpg);
   background-attachment: fixed;
   background-position: center;
 }
