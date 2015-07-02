@@ -17,4 +17,6 @@ $(".fancybox").fancybox({
         this.inner.prepend( '<h1>1. My custom title</h1>' );
         this.content = '<h1>2. My custom title</h1>' + this.content.html();
     }
+
 });
+
