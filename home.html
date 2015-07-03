@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Title -->
   <title>Holly's Hair</title>
   <!-- Styles -->
   <link rel="stylesheet" href="assets/styles/bootstrap.css">
   <link rel="stylesheet" href="assets/styles/Layout-Styles.css">
-  <link rel="stylesheet" href="assets/styles/index.css"> 
-  <link rel="stylesheet" href="assets/styles/animate.css">     
+  <link rel="stylesheet" href="assets/styles/index.css">   
   <link rel="stylesheet" href="assets/styles/font-awesome.min.css">
   <link rel="stylesheet" href="assets/styles/owl.carousel.css">
   <link rel="stylesheet" href="assets/styles/owl.theme.css">
@@ -20,6 +20,7 @@
   <!-- javascript -->
   <script src="assets/javascript/jquery-1.11.3.min.js"></script>
   <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <script src="assets/javascript/bootstrap.min.js"></script>
   <script src="assets/javascript/owl.carousel.js"></script>
   <script src="assets/javascript/slideshow/slideshow.js"></script>
   <script src="assets/javascript/slideshow/gallery.js"></script>
@@ -27,8 +28,40 @@
   <script src="assets/javascript/popup/jquery.fancybox.pack.js"></script>
   <script src="assets/javascript/popup/fancybox_init.js"></script>
   <script src="assets/javascript/map/map.js"></script>
+  <script src="assets/javascript/scroll/scroll-ease.js"></script>
+  <script src="assets/javascript/scroll/scroll.js"></script>
 </head>
 <body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#top">Holly's Hair</a>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="true">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </a></div><div class="navbar-collapse collapse in" id="bs-example-navbar-collapse-1" aria-expanded="true"><ul class="nav navbar-nav"><ul class="dropdown-menu"><a class="navbar-brand" href="#top">
+            </a><li><a class="navbar-brand" href="#top"></a><a href="#">Action</a></li>
+            <li><a href="#Welcome">Welcome</a></li>
+            <li><a href="#about-me">About Holly</a></li>
+            <li><a href="#prices">Price</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#Welcome">Welcome</a></li>
+            <li><a href="#about-me">About Holly</a></li>
+            <li><a href="#prices">Prices</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="top">
   <div class="header">
     <div class="header-container">
       <div id="slideshow" class="owl-carousel owl-theme">
@@ -40,83 +73,121 @@
       <img class="logo" src="assets/images/logo/logo.png">  
     </div>
   </div>
-  <div class="container_site">
-<div class="container-content">
-  <div class="content">
-    <div class="content-container container">
-      <div class="row">
-        <div class="col-sm-8 col-sm-offset-2">
-          <div class="icon">
-           <img src="assets/images/flat/scissor.png">
-          </div>
-           <h1>Welcome to Holly's Hair</h1>
-            <p>Holly's Hair is a unisex hair salon based on North hill inside Alfie Allens babers. we do a range of services from cutting & colouring to Hair extensions.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="slideshow">
-    <div class="slideshow-container">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2">
-            <div id="owl-demo" class="owl-carousel">
-              <div><a class="fancybox" rel="group" href="assets/images/hair-styles/zoomed/IMG-1.jpg"><img src="assets/images/hair-styles/IMG-1.jpg"></a></div>
-              <div><a class="fancybox" rel="group" href="assets/images/hair-styles/zoomed/IMG-2.jpg"><img src="assets/images/hair-styles/IMG-2.jpg"></a></div>
-              <div><a class="fancybox" rel="group" href="assets/images/hair-styles/zoomed/IMG-3.jpg"><img src="assets/images/hair-styles/IMG-3.jpg"></a></div>
-              <div><a class="fancybox" rel="group" href="assets/images/hair-styles/zoomed/IMG-4.jpg"><img src="assets/images/hair-styles/IMG-4.jpg"></a></div>
-              <div><a class="fancybox" rel="group" href="assets/images/hair-styles/IMG-5.jpg"><img src="assets/images/hair-styles/IMG-5.jpg"></a></div>
-              <div><a class="fancybox" rel="group" href="assets/images/hair-styles/IMG-6.jpg"><img src="assets/images/hair-styles/IMG-6.jpg"></a></div>
-              <div><a class="fancybox" rel="group" href="assets/images/hair-styles/IMG-7.jpg"><img src="assets/images/hair-styles/IMG-7.jpg"></a></div>
-              <div><a class="fancybox" rel="group" href="assets/images/hair-styles/IMG-8.jpg"><img src="assets/images/hair-styles/IMG-8.jpg"></a></div>
-              <div><a class="fancybox" rel="group" href="assets/images/hair-styles/IMG-9.jpg"><img src="assets/images/hair-styles/IMG-9.jpg"></a></div>
+</div>
+<div class="container_site">
+  <section id="Welcome">
+    <div class="container-content">
+      <div class="content">
+        <div class="content-container container">
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+              <div class="icon">
+               <img src="assets/images/flat/scissor.png">
+              </div>
+               <h1>Welcome to Holly's Hair</h1>
+                <p>Holly's Hair is a unisex hair salon based on North hill inside Alfie Allens babers. we do a range of services from cutting & colouring to Hair extensions.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-  <div class="aboutme">
-    <div class="about-me">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+      <div class="slideshow">
+        <div class="slideshow-container">
+          <div class="container">
             <div class="row">
-              <div class="col-sm-6">
-                <a class="fancybox" rel="group" href="assets/images/me/image-2.jpg"><img src="assets/images/me/image-1.jpg"></a>
-              </div>
-              <div class="col-sm-6">
-                <h1>About Holly.</h1>
-                <p>Holly arnold is a british unisex hair stylist, she provides many different styles, ranging from cutting & colouring to Hair extensions, a veriety of different styles, Holly has been hair dressing for 12 years now and has grew years of tallent throught the journey of cutting hair, she got inspired to cut hair by being told she had tallent, then improved upon her tallent and now has the amazing skill today.</p>
+              <div class="col-sm-8 col-sm-offset-2">
+                <div id="owl-demo" class="owl-carousel">
+                  <div><a class="fancybox" rel="group" href="assets/images/hair-styles/zoomed/IMG-1.jpg"><img src="assets/images/hair-styles/IMG-1.jpg"></a></div>
+                  <div><a class="fancybox" rel="group" href="assets/images/hair-styles/zoomed/IMG-2.jpg"><img src="assets/images/hair-styles/IMG-2.jpg"></a></div>
+                  <div><a class="fancybox" rel="group" href="assets/images/hair-styles/zoomed/IMG-3.jpg"><img src="assets/images/hair-styles/IMG-3.jpg"></a></div>
+                  <div><a class="fancybox" rel="group" href="assets/images/hair-styles/zoomed/IMG-4.jpg"><img src="assets/images/hair-styles/IMG-4.jpg"></a></div>
+                  <div><a class="fancybox" rel="group" href="assets/images/hair-styles/IMG-5.jpg"><img src="assets/images/hair-styles/IMG-5.jpg"></a></div>
+                  <div><a class="fancybox" rel="group" href="assets/images/hair-styles/IMG-6.jpg"><img src="assets/images/hair-styles/IMG-6.jpg"></a></div>
+                  <div><a class="fancybox" rel="group" href="assets/images/hair-styles/IMG-7.jpg"><img src="assets/images/hair-styles/IMG-7.jpg"></a></div>
+                  <div><a class="fancybox" rel="group" href="assets/images/hair-styles/IMG-8.jpg"><img src="assets/images/hair-styles/IMG-8.jpg"></a></div>
+                  <div><a class="fancybox" rel="group" href="assets/images/hair-styles/IMG-9.jpg"><img src="assets/images/hair-styles/IMG-9.jpg"></a></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="contact">
-    <div class="contact-container">
-      <div class="container">
-        <div class="row">
-          <div class="icon">
-            <img src="assets/images/flat/phone.png">
+  </section>
+    <section id="about-me">
+      <div class="aboutme">
+        <div class="icon"><h2><i class="fa fa-user"></i></h2></div>
+        <div class="about-me">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <a class="fancybox" rel="group" href="assets/images/me/image-2.jpg"><img src="assets/images/me/image-1.jpg"></a>
+                  </div>
+                  <div class="col-sm-6">
+                    <h1>About Holly.</h1>
+                    <p>Holly Arnold is a British unisex hair stylist, she provides many different styles, ranging from cutting & colouring to Hair extensions, a variety of different styles, Holly has been hairdressing for 12 years now and has grew years of talent throughout the journey, she got inspired to cut hair by being told she had talent at a young, then improved upon her talent and now has the amazing skill today.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <h1>Get in contact with me</h1>
-          <div class="info">
-            <p><i class="fa fa-phone"></i> Phone  -  07974 439016</p>
-            <p><i class="fa fa-location-arrow"></i> Location  -  38 North Hill, Colchester, Essex, CO1 1QR</p>
+        </div>
+      </div>
+    </section>
+    <section id="prices">
+      <div class="price">
+        <div class="icon"><h2><i class="fa fa-usd"></i></h2>
+        </div>
+          <div class="price-container">  
+            <div class="container">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>STYLE</th>
+                    <th>PRICE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">blah 1</th>
+                    <td>£20</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">blah 2</th>
+                    <td>£11</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">blah 3</th>
+                    <td>£16</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
-          <div class="button">
-            <a href="#map" id="mapclick" class="fancybox">Map <i class="fa fa-map-marker"></i></a>
+        </div>
+      </section>
+      <section id="contact">
+      <div class="contact">
+        <div class="contact-container">
+          <div class="container">
+            <div class="row">
+              <div class="icon">
+                <img src="assets/images/flat/phone.png">
+              </div>
+              <h1>Get in contact with me</h1>
+              <div class="info">
+                <p><i class="fa fa-phone"></i> Phone  -  07974 439016</p>
+                <p><i class="fa fa-facebook"></i> Facebook - Holly's Hair <a href="https://www.facebook.com/pages/Hollys-Hair/1429473657287385">Click here</a></p>
+                <p><i class="fa fa-location-arrow"></i> Location  -  38 North Hill, Colchester, Essex, CO1 1QR</p>
+                <div id="map"></div>
+              </div>
+            </div>
           </div>
-          <div id="map"></div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<div class="author"><a href="http://www.bobbyallen.co/"><p>Website made by Bobby Allen</p></a></div>
+  </section>
+  <div class="author"><a href="http://www.bobbyallen.co/"><p>Website made by Bobby Allen</p></a></div>
 </body>
 </html>
