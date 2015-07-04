@@ -2,7 +2,8 @@
     var myLatlng = new google.maps.LatLng(51.89183910000001,0.896173699999963);
     var mapOptions = {
       zoom: 17,
-      center: myLatlng
+      center: myLatlng,
+      scrollwheel: false,
     }
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
