@@ -8,7 +8,8 @@ $(document).ready(function() {
       singleItem:true,
       autoPlay : true,
       transitionStyle : "fade",
-      animateOut: 'fadeOut'
+      animateOut: 'fadeOut',
+      rewindNav: true,
  
   });
  

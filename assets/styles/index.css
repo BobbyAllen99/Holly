@@ -1,5 +1,5 @@
 .navbar {
-  -webkit-filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.60));
+  -webkit-filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.50));
 }
 
 /*Global*/
@@ -179,7 +179,49 @@ img {
 }
 
 /*About holly*/
+@media screen and (min-width: 700px) {
+  .btn_holly {
+    margin-left: 15px;
+  }
+}
 
+  .info-holly a {
+    position: absolute;
+    right: 0;
+    padding-right: 40px;
+    font-size: 30px;
+    color: #262626;
+  }
+@media screen and (max-width: 700px) {
+  .info-holly a {
+    position: absolute;
+    right: 0;
+    padding-right: 10px;
+    font-size: 30px;
+    color: #262626;
+  }
+}
+
+.info-holly {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 10px 5px 25px 25px;
+  margin:20px;
+}
+
+.about-me .info-holly p {
+  font-size: 15px;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 700px) {
+  .info-holly {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 0;
+    margin: 10px 0 0 0;
+  }
+}
 .aboutme h2 {
   font-size: 100px;
   margin-left: 40px;
@@ -201,6 +243,23 @@ img {
 .about-me p {
   font-size: 12px;
   font-weight: 300;
+  transition: all 1s ease;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-me p {
+    font-size: 14px;
+    font-weight: 300;
+    transition: all 1s ease;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-me p {
+    font-size: 15px;
+    font-weight: 300;
+  transition: all 1s ease;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -218,6 +277,28 @@ img {
 .price h2 {
   font-size: 100px;
   text-align: center;
+}
+
+.up .fa-chevron-circle-up {
+  font-size: 75px;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 10px;
+  transition: all 0.5s ease;
+}
+
+ .up .fa-chevron-circle-up:hover {
+  color: #000000;
+  transition: all 0.5s ease;
+}
+
+.up p {
+  text-align: center;
+}
+
+.up a {
+  color: #262626;
+  transition: all 1s ease;
 }
 
 /*Contact*/
@@ -272,7 +353,6 @@ img {
 .contact-container .info {
   padding-bottom: 10px
 }
-
 
 /*map*/
 

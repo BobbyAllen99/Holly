@@ -16,7 +16,7 @@
   <!-- Font -->
   <link href="assets/fonts/font.css" rel='stylesheet' type='text/css'>
   <!-- Icon -->
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon/favicon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon/Favicon.png">
   <!-- javascript -->
   <script src="assets/javascript/jquery-1.11.3.min.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -30,9 +30,10 @@
   <script src="assets/javascript/map/map.js"></script>
   <script src="assets/javascript/scroll/scroll.js"></script>
   <script src="assets/javascript/loading.js"></script>
+  <script src="assets/javascript/ping.js"></script>
 </head>
 <body>
-  <div style="display: block; margin: 0 auto; text-align: center;" id="load_screen"><div id="loading"><h1><i class="fa fa-spinner fa-pulse"></i></h1></div></div>
+  <div id="load_screen"><div id="loading"><i class="fa fa-circle-o-notch fa-spin"></i></div></div>
   <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#top">Holly's Hair</a>
@@ -120,11 +121,19 @@
               <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
                 <div class="row">
                   <div class="col-sm-6">
-                    <a class="fancybox" rel="group" href="assets/images/me/image-2.jpg"><img src="assets/images/me/image-1.jpg"></a>
+                    <img src="assets/images/me/image-1.jpg">
                   </div>
                   <div class="col-sm-6">
                     <h1>About Holly.</h1>
                     <p>Holly Arnold is a British unisex hair stylist, she provides many different styles, ranging from cutting & colouring to Hair extensions, a variety of different styles, Holly has been hairdressing for 12 years now and has grew years of talent throughout the journey, she got inspired to cut hair by being told she had talent at a young, then improved upon her talent and now has the amazing skill today.</p>
+                  </div>
+                  <a class="btn btn-default btn_holly" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Hear from holly <i class="fa fa-caret-down"></i></a>
+                  <div class="collapse" id="collapseExample">
+                    <div class="info-holly">
+                      <a type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i class="fa fa-times"></i></a>
+                      <h1>A little from holly...</h1>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -137,7 +146,6 @@
       <div class="price">
         <div class="icon"><h2><i class="fa fa-gbp"></i></h2>
         </div>
-
           <div class="price-container">  
             <div class="container">
               <div class="dropdown">
@@ -353,6 +361,7 @@
               <section id="hair">
                 <h1>Hair Extentions</h1>
                 <p>Balmin natural hair extentions, price on consultation.</p>
+                <div class="up"><a href="#prices"><i class="fa fa-chevron-circle-up"></i></a><p>Click to go back up to prices.</p></div>
               </section>
             </div>
           </div>
@@ -372,7 +381,8 @@
                 <p><i class="fa fa-facebook"></i> Facebook - Holly's Hair <a href="https://www.facebook.com/pages/Hollys-Hair/1429473657287385">Click here</a></p>
                 <p>38 North Hill <br>Colchester<br>Essex<br>CO1 1QR<br>*Use the side entrance*</p>
                 <div id="map"></div>
-              </div>
+               </div>
+              <div class="up"><a href="#top"><i class="fa fa-chevron-circle-up"></i></a><p>Click to go to the top.</p></div>
             </div>
           </div>
         </div>
